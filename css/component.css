@@ -45,6 +45,17 @@ a:hover {
 
 .container { height: 100%; }
 
+.filler{
+       position: absolute;
+       background-color: #ffffff;
+       color: white;
+        width: 100%;
+        height: 100%;      
+    	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+      	box-sizing: border-box;     
+    }
+
 .liczniki {
 	margin-top: -35px;
 }
