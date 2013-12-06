@@ -61,6 +61,7 @@ a:hover {
 	background-size: 150px 150px;
 	height: 150px;
 	width: 150px;
+	opacity: 0.3;
 }
 
 .firediv {
@@ -68,6 +69,7 @@ a:hover {
 	background-size: 150px 150px;
 	height: 150px;
 	width: 150px;
+	opacity: 0.3;
 }
 
 .liczniki {
@@ -117,6 +119,14 @@ a:hover {
 	background: #E6E6E6;
 }
 */
+
+.bl-main :hover .mocodiv {
+	opacity: 1;
+}
+
+.bl-main :hover .firediv {
+	opacity: 1;
+}
 
 .bl-main > section:nth-child(2) {
 	top: 0;
