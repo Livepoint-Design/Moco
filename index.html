@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>MOCO & FIREFORM</title>
+		<meta name="description" content="Fullscreen Layout with Page Transitions" />
+		<meta name="keywords" content="fullscreen layout, boxes, responsive, page transitions, css transitions, jquery, portfolio, template" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">	
+			<div id="bl-main" class="bl-main">
+				<section>
+					<div class="bl-box bl-box-lewa" >
+						<h2><embed id="moco-main" src="svg/moco-main.svg" type="image/svg+xml"></embed></h2>
+					</div>
+					<div class="bl-content">
+						<div align="center">
+						<h2>
+						<embed id="moco-big" src="svg/moco-big.svg" type="image/svg+xml"></embed>
+						</h2>
+						<p>
+						ZAPRASZAMY ZA
+						<br />
+						<br />
+							<div class="ccounter">
+									<input class="knob days" data-readOnly="true" data-width="150" data-displayPrevious=true data-fgColor="#e6e6e6" data-thickness=".02" data-min="0" data-max="365" value="75">
+										<input class="knob hour" data-readOnly="true" data-width="150" data-min="0" data-max="24" data-displayPrevious=true data-fgColor="#e6e6e6" data-thickness=".02" value="75">
+										<input class="knob minute" data-readOnly="true" data-width="150" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#e6e6e6" data-thickness=".02" value="75">
+										<input class="knob second" data-readOnly="true" data-width="150" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#e6e6e6" data-thickness=".02" value="75">
+								</div>
+								<div class="liczniki">
+									<div class="licznik">
+									DNI
+									</div>
+									<div class="licznik">
+									GODZIN
+									</div>
+									<div class="licznik">
+									MINUT
+									</div>
+									<div class="licznik">
+									SEKUND
+									</div>
+								</div>
+						</p>
+						</div>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<section id="bl-work-section">
+					<div class="bl-box bl-box-prawa">
+						<h2>
+							<embed id="fire-main" src="svg/fire-main.svg" type="image/svg+xml"></embed>
+						</h2>
+					</div>
+					<div class="bl-content">
+						<div align="center">
+						<h2>
+						<embed id="fire-big" src="svg/fire-main.svg" type="image/svg+xml"></embed>
+						</h2>
+						<p>
+						ZAPRASZAMY ZA
+						<br />
+						<br />
+							<div class="ccounter1">
+									<input class="knob days" data-readOnly="true" data-width="150" data-displayPrevious=true data-fgColor="#e6e6e6" data-thickness=".02" data-min="0" data-max="365" value="75">
+										<input class="knob hour" data-readOnly="true" data-width="150" data-min="0" data-max="24" data-displayPrevious=true data-fgColor="#e6e6e6" data-thickness=".02" value="75">
+										<input class="knob minute" data-readOnly="true" data-width="150" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#e6e6e6" data-thickness=".02" value="75">
+										<input class="knob second" data-readOnly="true" data-width="150" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#e6e6e6" data-thickness=".02" value="75">
+								</div>
+								<div class="liczniki">
+									<div class="licznik">
+									DNI
+									</div>
+									<div class="licznik">
+									GODZIN
+									</div>
+									<div class="licznik">
+									MINUT
+									</div>
+									<div class="licznik">
+									SEKUND
+									</div>
+								</div>
+						</p>
+						</div>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+			</div>
+		</div><!-- /container -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/boxlayout.js"></script>
+		<script>
+			$(function() {
+				Boxlayout.init();
+			});
+		</script>
+			<script src="js/jquery.knob.js"></script>
+			<script src="js/jquery.ccountdown.js"></script>
+			<script src="js/init.js"></script>
+			<script>
+			//enter the count down date using the format year, month, day, time:time
+			$(".ccounter").ccountdown(2014,12,25,'18:00');
+			$(".ccounter1").ccountdown(2013,12,25,'18:00');
+			$(".ccounter2").ccountdown(2013,12,10,'18:00');
+
+			function hover(element) {
+    		element.setAttribute('src', 'images/moco-red.png');
+			}
+			function unhover(element) {
+    		element.setAttribute('src', 'images/moco-white.png');
+			}
+			function hover1(element) {
+    		element.setAttribute('src', 'images/fire-grey.png');
+			}
+			function unhover1(element) {
+    		element.setAttribute('src', 'images/fire-white.png');
+			}
+			</script>
+	</body>
+</html>
