@@ -288,6 +288,10 @@ div.bl-panel-items > div > div {
 	padding-top: 150px;
 }
 
+.firemargin{
+	padding-top: 50px !important;
+}
+
 .bl-content h2 {
 	font-size: 3em;
 	font-weight: 300;
