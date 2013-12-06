@@ -250,6 +250,7 @@ a:hover {
 	opacity: 0;
 	pointer-events: none;
 	background-color: white;
+	border-radius: 50%;
 }
 
 .bl-main > section .bl-icon-close :hover {
