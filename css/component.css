@@ -148,6 +148,10 @@ a:hover {
     align-items: center;
 }
 
+.bl-box :hover {
+	opacity: 0.7;
+}
+
 .bl-box h2 {
 	text-align: center;
 	margin: 0;
